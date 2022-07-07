@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+    double pSp,pRj,pMg,pEs,pOutros;
+    double Sp=67836.43, Rj=36678.66, Mg=29229.88, Es=27165.48, Outros=19849.53, TotMensal=180759.98;
+    
+    pSp = (Sp / TotMensal)*100;
+    pRj = (Rj / TotMensal)*100;
+    pMg = (Mg / TotMensal)*100;
+    pEs = (Es / TotMensal)*100;
+    pOutros = (Outros / TotMensal)*100;
+    
+    
+printf(" O percentual de representação que cada estado teve dentro do valor total mensal da distribuidora é de:");
+        printf("\n %.4f""%%  SP ",pSp);
+        printf("\n %.4f""%%  RJ ",pRj);
+        printf("\n %.4f""%%  MG ",pMg);
+        printf("\n %.4f""%%  ES ",pEs);
+        printf("\n O percentual de representação que os Outros estados tiveram dentro do valor total mensal da distribuidora é de: ");
+        printf("\n %.4f""%%  ",pOutros);
+    return 0;
+}
